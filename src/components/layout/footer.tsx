@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { Instagram, Youtube, Mail, Phone, MapPin, MessageCircleMore } from "lucide-react";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
               <div>
                 <p className="font-medium text-white">Telepon</p>
                 <a href="tel:+6281234567890" className="hover:text-lime-400 transition">
-                  +62 858-5277-9203
+                  +77 858-2713-6453
                 </a>
               </div>
             </div>
@@ -111,15 +111,10 @@ const Footer: React.FC = () => {
                 name: "YouTube"
               },
               {
-                href: "https://www.instagram.com/trashinno.id/",
+                href: "https://www.instagram.com/",
                 icon: <Instagram className="w-5 h-5" />,
                 name: "Instagram"
-              },
-              {
-                href: "https://wa.me/+6285852779203",
-                icon: <MessageCircleMore className="w-5 h-5" />,
-                name: "WhatsApp"
-              },
+              }
             ].map(({ href, icon, name }, i) => (
               <motion.a
                 key={i}

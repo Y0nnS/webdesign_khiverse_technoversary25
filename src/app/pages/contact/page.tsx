@@ -136,7 +136,7 @@ export default function Kontak() {
                     {
                       icon: <Phone className="w-6 h-6 text-green-500" />,
                       title: "Telepon",
-                      content: "+62 858-5277-9203",
+                      content: "+77 858-2713-6453",
                       subtitle: "Senin-Jumat, 07:00-15:00"
                     },
                     {
