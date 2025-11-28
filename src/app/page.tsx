@@ -146,7 +146,7 @@ function ImpactStats() {
     {
       value: '175.000 ton',
       label: 'Sampah plastik dilaut',
-      desc: 'Volume sampah plastik yang mencemari lautan Indonesia setiap tahun.',
+      desc: 'Volume sampah plastik yang mencemari lautan di Indonesia setiap tahun.',
       icon: <Sparkles className="w-8 h-8 text-green-600" />,
       color: 'bg-white'
     }
