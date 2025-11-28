@@ -364,7 +364,7 @@ export default function MasalahKita() {
               <motion.span
                 whileHover={{ x: 5 }}
                 transition={{ type: 'spring', stiffness: 300 }}>
-                Pelajari Cara Mengelola Sampah
+                Pelajari Selengkapnya
               </motion.span>
               <div>
                 <ChevronRight className="w-5 h-5" />

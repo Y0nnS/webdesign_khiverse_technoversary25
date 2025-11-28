@@ -132,7 +132,7 @@ export default function TentangTeam() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
                   whileHover={{ y: -10 }}
-                  className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all"
+                  className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:border-green-300 transition-all hover:shadow-md h-full"
                   onClick={() => setExpandedMember(expandedMember === idx ? null : idx)}>
                   <div className="relative h-80 w-full">
                     <Image
@@ -227,7 +227,7 @@ export default function TentangTeam() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white p-6 sm:p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all relative overflow-hidden cursor-pointer">
+              className="bg-white p-6 sm:p-8 rounded-xl shadow-xl border border-gray-200 hover:border-green-300 transition-all hover:shadow-md h-full relative overflow-hidden cursor-pointer">
               <div className="absolute -top-4 -right-4 opacity-10">
                 <Target className="w-16 h-16 text-green-500" />
               </div>
@@ -247,7 +247,7 @@ export default function TentangTeam() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white p-6 sm:p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all relative overflow-hidden cursor-pointer">
+              className="bg-white p-6 sm:p-8 rounded-xl shadow-xl border border-gray-200 hover:border-green-300 transition-all hover:shadow-md h-full relative overflow-hidden cursor-pointer">
               <div className="absolute -top-4 -right-4 opacity-10">
                 <Leaf className="w-16 h-16 text-green-500" />
               </div>
@@ -310,7 +310,7 @@ export default function TentangTeam() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 whileHover={{ y: -5 }}
-                className={`${value.color} p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all relative overflow-hidden`}>
+                className={`${value.color} p-8 rounded-xl shadow-md border border-gray-200 hover:border-green-300 transition-all hover:shadow-md h-full relative overflow-hidden`}>
                 <div className="absolute -bottom-4 -right-4 opacity-10">
                   <Sparkles className="w-16 h-16 text-green-500" />
                 </div>
