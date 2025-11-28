@@ -123,24 +123,25 @@ export default function TentangTeam() {
             </motion.p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-            {team.map((member, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                whileHover={{ y: -10 }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all"
-                onClick={() => setExpandedMember(expandedMember === idx ? null : idx)}>
-                <div className="relative h-64 w-full">
-                  <Image
-                    src={member.img}
-                    alt={member.name}
-                    fill
-                    className="object-cover"/>
-                </div>
-                <div className="p-4 sm:p-6 text-center">
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl w-full">
+              {team.map((member, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  whileHover={{ y: -10 }}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all"
+                  onClick={() => setExpandedMember(expandedMember === idx ? null : idx)}>
+                  <div className="relative h-80 w-full">
+                    <Image
+                      src={member.img}
+                      alt={member.name}
+                      fill
+                      className="object-cover object-top"/>
+                  </div>
+                  <div className="p-4 sm:p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800 mb-1">{member.name}</h3>
                   <p className="text-sm text-green-600 font-medium mb-3">{member.role}</p>
                   <p className="text-gray-600 text-sm mb-4">{member.desc}</p>
@@ -209,7 +210,8 @@ export default function TentangTeam() {
                   </div>
                 </div>
               </motion.div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

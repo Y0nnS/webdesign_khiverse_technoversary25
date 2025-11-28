@@ -1,7 +1,7 @@
 'use client';
 
-import { Toaster } from 'react-hot-toast';
 import { usePathname } from 'next/navigation';
+import { Toaster } from 'react-hot-toast';
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
