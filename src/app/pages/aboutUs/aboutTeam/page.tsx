@@ -13,13 +13,13 @@ export default function TentangTeam() {
   const team = [
     {
       name: 'Andika Arifin',
-      role: 'Website Developer',
+      role: 'Frontend Developer',
       img: '/images/team/anfin-new.jpg',
-      desc: 'Pengembang website yang berfokus pada pengalaman pengguna dan desain yang responsif. Keahlian utama: HTML, CSS, JavaScript.',
+      desc: 'Pengembang frontend dengan keahlian dalam membangun aplikasi web yang responsif dan user-friendly. Berpengalaman dalam React, Next.js, dan Tailwind CSS.',
       details: [
-        'Mengembangkan antarmuka pengguna yang intuitif',
-        'Optimasi performa website',
-        'Integrasi dengan sistem backend'
+        'Membangun antarmuka pengguna yang responsif dan intuitif',
+        'Mengoptimalkan performa website untuk kecepatan dan efisiensi',
+        'Bekerja sama dengan tim desain untuk menerjemahkan mockup menjadi kode'
       ],
       social: {
         linkedin: '#',
@@ -28,14 +28,14 @@ export default function TentangTeam() {
       }
     },
     {
-      name: 'Ahmad Faidh Rizky Abu Adha',
-      role: 'System Administrator',
-      img: '/images/team/faidh-new.png',
-      desc: 'Ahli dalam pengelolaan server dan infrastruktur TI. Memastikan sistem berjalan dengan baik dan aman.',
+      name: 'Aruna Pria Maheswara',
+      role: 'Frontend Developer',
+      img: '/images/team/aruna-new.png',
+      desc: 'Spesialis frontend dengan passion dalam menciptakan desain yang menarik dan fungsional. Keahlian utama: React, Next.js, Tailwind CSS.',
       details: [
-        'Manajemen server dan jaringan',
-        'Keamanan sistem',
-        'Optimasi infrastruktur'
+        'Mendesain dan mengimplementasikan UI/UX',
+        'Kolaborasi dengan tim desain untuk memastikan konsistensi merek',
+        'Meningkatkan aksesibilitas dan responsivitas aplikasi web'
       ],
       social: {
         linkedin: '#',
