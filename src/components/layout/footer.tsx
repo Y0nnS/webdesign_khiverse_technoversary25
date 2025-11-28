@@ -121,9 +121,7 @@ const Footer: React.FC = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-3 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-sm transition"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }} >
+                className="flex items-center gap-2 px-3 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-sm transition">
                 {icon}
                 <span>{name}</span>
               </motion.a>
@@ -139,30 +137,6 @@ const Footer: React.FC = () => {
             <p className="text-sm text-zinc-400">
               &copy; {currentYear} TrashInno. All rights reserved.
             </p>
-            <p className="text-xs text-zinc-500 mt-1">
-              Membangun masa depan berkelanjutan bersama.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-4">
-              {[
-                { href: "/pages/privacy", label: "Privacy Policy" },
-                { href: "/pages/terms", label: "Terms of Service" },
-                { href: "/pages/faq", label: "FAQ" },
-              ].map(({ href, label }) => (
-                <motion.div
-                  key={href}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}>
-                  <Link
-                    href={href}
-                    className="text-xs text-zinc-400 hover:text-lime-400 transition-colors">
-                    {label}
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
